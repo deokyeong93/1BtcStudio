@@ -28,3 +28,9 @@
 | 2026-10-04 | Higgsfield MCP | gpt_image_2_5 medium | 첫 장면 B17 v1 | base-images.md B17, 참고 사진 없이 sanggu v4 설명문만 | - | 0.5 | 채택(서아). 기록: 왼쪽 볼 점 없음, 보통 체격, 뒤 벽 영어 포스터 | 승인된 상구 기준 얼굴 없음 |
 | 2026-10-04 | Higgsfield MCP | seedance_2_0_mini 720p 5초, 소리 끔 | 샷 S17 v1 | [S17.md](prompts/S17.md), 첫 장면 B17 v1, 아주 천천히 다가감 | - | 5 | 폐기: 5초 만에 얼굴 클로즈업까지 다가가 손·볼펜이 화면 밖, 고개 숙여 볼펜 봄, 끝 표정이 의아함 | |
 | 2026-10-04 | Higgsfield MCP | seedance_2_0_mini 480p 5초, 소리 끔 | 샷 S17 v2 | v1에서 카메라 완전 고정 | - | 2.5 | 부분 사용(서아 redo, 0~3초만 사용): 볼펜 멈춤→떨어짐 보임, 3초 뒤 고개 숙임 | 미리보기 media/P001_preview_scene5_v1.mp4 (S05 v4 5초 + S17 v2 0~3초) |
+| 2026-10-04 | Higgsfield MCP | text2speech_v2 (ElevenLabs, 프리셋 Brooks) ×4 | 예고편 NA 4줄 | "신입은 안 뽑으려고 했다." / "…취소." / "회사 AI라고 줬다." / "…답은 내가 친다." | - | 약 0.6 | 채택(발음은 대표 확인 필요) | 1회 429 요청 제한 후 재시도 |
+| 2026-10-04 | Higgsfield MCP | gpt_image_2_5 medium ×4 | B17 v2, BT1, BT2, BT3 | 도윤 예고편 프롬프트(상구 v5, 은솔 확정 얼굴 참고) | - | 2 | 4장 모두 채택(서아). 기록: 상구 볼 점 없음, BT2 안경테 얇음, BT3 수첩 | |
+| 2026-10-04 | Higgsfield MCP | seedance_2_0 fast 720p 5초 | 샷 S17 v3 | 상구 v5, 카메라 고정, "never looks down at the pen" | - | 12.5 | **채택**(서아): 볼펜 떨어짐, 정면 시선, 두 번 깜빡임, 눈빛 풀림 | |
+| 2026-10-04 | Higgsfield MCP | seedance_2_0_mini 720p 5초 ×2 | 예고편 T1(폰 건네는 손), T2 v1(대표 폰 치며 미소) | 도윤 프롬프트 | - | 10 | T1 채택 / T2 v1 폐기: 상구 약지에 반지 | |
+| 2026-10-04 | Higgsfield MCP | seedance_2_0 fast 720p 5초 | 예고편 T3(퇴근길 은솔) | 도윤 프롬프트 | - | 12.5 | 채택(서아) | 1회 429 동시 생성 제한 후 재시도 |
+| 2026-10-04 | Higgsfield MCP | seedance_2_0_mini 720p 5초 | 예고편 T2 v2 | v1 + "bare hands, no rings or jewelry" | - | 5 | 채택(서아) | 예고편 media/P001_trailer_v1.mp4 |
