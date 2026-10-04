@@ -21,8 +21,8 @@ AI 툴로 단편 영상을 만드는 1인 스튜디오입니다.
 
 | 스킬 | 하는 일 | 크레딧 |
 |---|---|---|
-| `/1btcstudio-04step-prepare` | 0~4를 묻지 않고 이어서. 입력은 0단계 보충만. 생성 없음 | 0 |
-| `/1btcstudio-0step-series` | 시리즈인지 새 이야기인지 | 0 |
+| `/1btcstudio-04step-prepare` | 0~4를 이어서. 판정·예산 종류만 고르고, 생성 없음 | 0 |
+| `/1btcstudio-0step-series` | 시리즈인지 새 이야기인지, 예산 종류, 음악·효과음을 선택지로 묻음 | 0 |
 | `/1btcstudio-1step-story` | 로그라인·시놉시스·대본·캐릭터 | 0 |
 | `/1btcstudio-2step-storycheck` | 대본 검수 | 0 |
 | `/1btcstudio-3step-prep` | 외모 시트·샷리스트·프롬프트·예상 크레딧 | 0 |

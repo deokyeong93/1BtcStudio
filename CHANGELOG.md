@@ -33,6 +33,7 @@
 - 직원 호출을 병렬 서브에이전트에서 직렬 단계 스킬 `/1btcstudio-0step-series`~`7step-release`로 바꿈. `/1btcstudio`는 다음 단계만 고른다. 대사·연출 기준은 [dialogue-style](studio/agents/dialogue-style.md), [direction-style](studio/agents/direction-style.md). 얼굴·의상·장소·목소리는 작품 `base.md`에 경로와 id만 잠근다.
 - 캐릭터 디자인을 [casting-style](studio/agents/casting-style.md)로 교체. 주연급 미남·미녀와 주변 호감형 원칙은 더 이상 쓰지 않음.
 - `/1btcstudio-04step-prepare`: 0단계 보충만으로 4단계 프롬프트 검수까지 직렬 진행. 생성은 하지 않음.
+- 0단계에 예산 종류(테스트, 예고·단편, 시리즈 본편)를 둔다. 판정, 종류, 음악·효과음은 매번 선택지로 묻는다.
 
 ### 제거
 - P001 파일럿 단편 폴더 삭제. 옛 프롬프트로 만든 대본·시트·샷·예고편을 폐기.

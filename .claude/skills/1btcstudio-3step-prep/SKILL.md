@@ -42,11 +42,13 @@ shot_id,scene,duration_sec,description,camera_move,characters,dialogue,model,sta
 3. 동작 하나. 누가, 어디서, 무엇을, 왜
 4. 질감
 
+`studio/series.md`의 모델과 한 단계 아래만 `model`에 적는다. 덜 중요한 샷만 한 단계 아래다. 다른 계열은 실패다. 샷 수가 상한을 넘으면 샷을 줄인다. 넘긴 채 견적을 내지 않는다. 소리 끔, 길이 5초.
+
 약 5초, 동작 하나, 인물 최대 2명. `cinematic`, `natural light`, `slow push in`만으로 된 문장은 쓰지 않는다. 푸시인은 핀처 문법을 골랐고 시작 크기와 끝 크기를 둘 다 적었을 때만 쓴다. 여러 팀 커버리지, 시간 교차, 장면 전환은 프롬프트에 넣지 않는다. 6단계 편집 노트로 넘긴다.
 
 금지 목록을 길게 붙이지 않는다. 원하는 것을 긍정문으로 쓴다. 좌우는 화면 기준을 같이 쓰거나, 좌우가 없는 위치로 정한다.
 
-`03-production/credit-estimate.md`는 `studio/higgsfield-guide.md` 2장 단가로 계산한다. Higgsfield MCP가 연결되어 있으면 `get_cost: true`로 단가만 조회한다. 이미지를 생성하지 않는다.
+`03-production/credit-estimate.md`는 `studio/higgsfield-guide.md` 2장 단가로 계산한다. 캐릭터, 장소, 첫 장면, 음성 상한, 예비 30%를 칸대로 넣는다. 시리즈 본편의 5초 단가가 가이드에 없으면 `get_cost: true`로 확인하고, 조회가 안 되면 10초 단가를 적고 `확인 필요`로 남긴다. Higgsfield MCP가 연결되어 있으면 단가만 조회한다. 이미지를 생성하지 않는다.
 
 작품 `README.md`에서 1. 기획을 ✅, 2. 프리프로덕션을 🔄로 표시한다. 커밋하지 않는다.
 

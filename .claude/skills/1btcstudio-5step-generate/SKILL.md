@@ -18,7 +18,7 @@ description: 검수를 통과한 프롬프트만 Higgsfield로 생성한다. 서
 Higgsfield MCP가 연결되어 있지 않으면 `studio/higgsfield-guide.md` 3장의 연결 방법만 알리고 멈춘다.
 
 ## 체험
-주연 기준 얼굴, 사람 없는 방 1장, 샷리스트의 테스트 샷 1개만 만든다. Soul ID 학습은 하지 않는다. 영상은 그 요금제에서 되는 가장 싼 모델을 쓴다. 모델 이름과 단가는 higgsfield-guide 2장과 9장을 따른다.
+주연 기준 얼굴, 사람 없는 방 1장, 샷리스트의 테스트 샷 1개만 만든다. Soul ID 학습은 하지 않는다. 영상은 `studio/series.md`에 잠근 모델을 쓴다. 그 모델이 요금제에서 막히면 멈추고, 다른 계열로 바꾸지 않는다. 단가는 higgsfield-guide 2장과 9장을 따른다.
 
 ## 생성
 순서는 `credit-estimate.md`를 따른다. 이번 실행의 사용 합계를 더한다. 다음 생성이 한도를 넘으면 그 생성은 하지 않는다.
@@ -27,7 +27,7 @@ Higgsfield MCP가 연결되어 있지 않으면 `studio/higgsfield-guide.md` 3�
 2. 인물이 있는 첫 장면 이미지는 `gpt_image_2_5` medium에 Element 또는 기준 얼굴을 넣고, 프롬프트 첫 줄에 "참고 이미지는 얼굴·머리·의상만, 구도·배경은 따르지 말 것"을 적는다. 사람 없는 방은 `soul_2`.
 3. 샷 영상은 `prompts/S0X.md`의 모델·길이와 첫 장면 이미지(`start_image`)로 `generate_video`한 뒤 `jobs_wait`로 끝날 때까지 기다린다. 테스트 샷이 통과한 뒤에 나머지를 한다.
 4. 생성 전에 `get_cost: true`로 단가를 확인해 합계에 더한다. 대사·현장음이 없는 샷은 Kling `sound: off`.
-5. 요금제 오류면 크레딧이 빠진 것이 아니다. Seedance 2.0 fast 720p, 그다음 mini 720p로 한 번만 바꾸고 보고에 적는다.
+5. 요금제 오류면 크레딧이 빠진 것이 아니다. 모델을 다른 계열로 바꾸지 않는다. 멈추고 필요한 요금제를 보고에 적는다.
 6. `preset_recommendation`이 오면 `declined_preset_id`로 거절하고 적은 프롬프트 그대로 생성한다.
 7. 결과 URL은 `curl`로 `projects/<작품>/media/`에 받는다. 파일명은 `studio/handbook.md` 규칙. `media/`는 git에 올리지 않는다.
 

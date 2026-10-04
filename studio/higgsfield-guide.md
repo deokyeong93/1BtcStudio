@@ -12,7 +12,7 @@
 
 | # | 대표가 입력 | 하는 일 | 크레딧 | 멈추는 곳 |
 |---|---|---|---|---|
-| 0 | `/1btcstudio-0step-series` | 시리즈인지 새 이야기인지. 지킬 인물·사건·얼굴 시트 | 0 | `studio/series.md` |
+| 0 | `/1btcstudio-0step-series` | 시리즈인지 새 이야기인지, 예산 종류, 음악·효과음을 선택지로 묻는다 | 0 | `studio/series.md` |
 | 1 | `/1btcstudio-1step-story` | 로그라인·시놉시스·대본·캐릭터. 장면마다 `문법:` | 0 | 대본 |
 | 2 | `/1btcstudio-2step-storycheck` | 대본 검수 | 0 | `script-review.md` 통과 |
 | 3 | `/1btcstudio-3step-prep` | 외모 시트·샷리스트·프롬프트·예상 크레딧 | 0 | `credit-estimate.md` |
@@ -35,7 +35,7 @@
 /1btcstudio-0step-series 회사 면접관이 사실 AI였다면
 ```
 
-0부터 4까지 한 번에 가려면 보충만 적습니다. 대표에게 묻지 않고, 생성 전에 멈춥니다.
+0부터 4까지 한 번에 가려면 보충만 적습니다. 판정, 예산 종류, 음악·효과음만 고르고, 생성 전에 멈춥니다.
 
 ```
 /1btcstudio-04step-prepare 회사 면접관이 사실 AI였다면, 3분
@@ -45,7 +45,7 @@
 
 - 주제 한 줄이면 됩니다.
 - 새 작품 폴더는 1단계가 `scripts/new-project.sh`로 만듭니다. GitHub 이슈는 만들지 않습니다.
-- 대표에게 고르라고 묻지 않습니다. 추천안을 채택합니다.
+- 0단계의 판정, 예산 종류, 음악·효과음만 대표가 고릅니다. 그 외는 추천안을 채택합니다.
 - 캐스팅·의상은 [casting-style.md](agents/casting-style.md)를 따른다. 생성 프롬프트에 배우 이름과 "actor-level looks"를 넣지 않는다.
 - 4단계가 `통과`로 끝나면 다음 입력은 `/1btcstudio-5step-generate <예상 크레딧 + 여유>`입니다.
 
