@@ -17,6 +17,7 @@
 | YouTube | 5 | 배포 | 무료 | | — | |
 
 ## 툴별 메모
+처음 쓰는 방법은 [tool-guide.md](tool-guide.md)를 봅니다.
 툴을 쓰면서 알게 된 요령과 한계를 짧게 적습니다. 오류가 길어지면 `tool-issue` 이슈로 따로 기록합니다.
 
 - **Claude Code 직원팀**: 직원 5명 = 서브에이전트, 회의 한 번에 약 9회 호출. 사용법은 [agents/README.md](agents/README.md)

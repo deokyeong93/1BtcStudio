@@ -24,6 +24,9 @@
 - 직원팀: Claude Code 서브에이전트 5명(하린·도윤·서아·준호·유나)과 `/1btcstudio` 스킬. 직원끼리 회의해 결론을 확정하고 대표는 크레딧·공개만 승인 ([studio/agents](studio/agents/README.md))
 - 스튜디오 스타일 문서 [studio-style](studio/agents/studio-style.md)
 - 운영 규칙에 "AI 팀과 일하는 방식" 추가 ([handbook](studio/handbook.md))
+- 툴 사용 가이드북 [tool-guide](studio/tool-guide.md) (ElevenLabs·Suno·CapCut·YouTube)
+- 제작 가이드북 [higgsfield-guide](studio/higgsfield-guide.md): 주제 → 기획 → 크레딧 → Higgsfield 생성 순서, 단가·요금제(2026-10-04 조회)
+- 자동 진행 스킬 `/1btcstudio-1step`: `기획 <주제>`로 새 작품 기획부터 예상 크레딧까지, `생성 <한도>`로 Higgsfield MCP 생성·검수 자동
 
 ### 작품
 - P001 파일럿 단편 착수: [projects/P001-pilot](projects/P001-pilot/) 생성 (`scripts/new-project.sh`로 생성)
