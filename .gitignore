@@ -1,0 +1,43 @@
+# ─────────────────────────────────────────────
+# 미디어 원본은 git에 올리지 않는다 (studio/handbook.md "미디어 파일 정책" 참고)
+# 원본은 외부 저장소에 두고, 작품 README에 링크만 남긴다.
+# ─────────────────────────────────────────────
+
+# 영상
+*.mp4
+*.mov
+*.m4v
+*.webm
+*.avi
+*.mkv
+
+# 음원
+*.wav
+*.mp3
+*.aac
+*.m4a
+*.flac
+*.ogg
+
+# 편집 프로젝트 파일 (Premiere / DaVinci Resolve)
+*.prproj
+*.drp
+*.drt
+*.dra
+
+# 이미지 원본·작업 파일
+*.psd
+*.tif
+*.tiff
+*.exr
+
+# 원본 미디어 폴더 (어느 위치에 있든 무시)
+raw/
+renders/
+exports/
+media/
+footage/
+
+# OS
+.DS_Store
+Thumbs.db
