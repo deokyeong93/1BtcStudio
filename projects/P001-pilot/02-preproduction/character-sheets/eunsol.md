@@ -4,6 +4,20 @@
 
 ## 외모 시안
 
+### 외모 v2 (2026-10-04, 대표 지시 · 체험 검수 반영) — 현재 기준
+대표가 보여 준 참고 사진은 실존 배우라 분위기만 참고했고 얼굴은 닮게 만들지 않습니다(사진은 레포에 두지 않음). 외모 원칙 변경([art.md](../../../../studio/agents/art.md))에 따라 주인공은 드라마 주연급 미녀로 만듭니다.
+- 인상: 드라마 주연급 미녀. 조용하고 담담한 신입, 살짝 긴장했지만 집중한 무표정. 맑은 피부, 얇은 화장.
+- 머리: 중간 높이 포니테일 → 가운데 가르마 + 목덜미 로우 번, 얼굴 옆 짧은 잔머리 정확히 두 가닥. 이유: "중간 높이"는 세 번 모두 정수리로 올라갔고, "목덜미 번"은 위치가 하나로 정해집니다. "몇 가닥"은 수가 늘어 반묶음처럼 보여 "두 가닥"으로 못 박았습니다.
+- 눈: 속쌍꺼풀 긴 눈 → 크고 또렷한 검은 눈. 짙은 일자 눈썹은 유지(차별화 장치).
+- 점: 오른쪽 눈썹 꼬리 위 → 콧등 가운데 작은 점 하나. 얼굴 가운데라 좌우가 뒤집힐 일이 없고, "no other moles"로 늘어나는 것도 막습니다.
+- 나이: 갸름한 계란형에 턱선을 살짝 살리고 "adult face, not a teenager"를 넣었습니다.
+- 입술: 자연스러운 MLBB(장밋빛 누드). 이가 보이지 않게(v3 폐기 사유).
+- 의상: 그대로. 가방만 "끈 하나짜리 숄더백, 백팩 아님"으로 못 박았습니다(S05 체험에서 백팩으로 바뀜).
+- 멀리서 보이는 특징: 목덜미 번 + 가운데 가르마 / 가까이서만 보이는 특징: 콧등 점
+- 확인 필요: 정면에서는 번이 안 보이므로 가르마와 잔머리 두 가닥이 표시 역할을 합니다. 씬 6 뒷모습에서 번이 작게 보일 수 있어 B06 생성 뒤 검수합니다. 큰 눈 때문에 다시 어려 보이면 "large"를 뺍니다.
+
+### (아래 시안 A~C는 v1, 대체됨)
+
 공통 조건(2단계 회의 10번): 맑고 단정합니다. 묶은 머리가 멀리서 보이는 특징이고, 무채색 정장에 옅은 화장, 또렷한 눈매입니다. 연애 느낌 스타일은 피합니다. 의상은 캐릭터 설정을 따르고 모든 샷에서 같습니다.
 
 ### 시안 A "중간 높이 포니테일 신입" (추천)
@@ -52,20 +66,20 @@
 - 시드:
 - Higgsfield Soul ID 이름: eunsol
 - Soul ID 등록일:
-- 고정 설명문: [reference-sheet.md](reference-sheet.md)의 eunsol v1
+- 고정 설명문: [reference-sheet.md](reference-sheet.md)의 eunsol v3
 - 메모: 아래 "메모"
 
-## 기준 얼굴 프롬프트 (Higgsfield Soul 이미지용)
+## 기준 얼굴 프롬프트 v2 (Higgsfield Soul 이미지용)
 
 ```
-Realistic photo, front-facing waist-up portrait of a 25-year-old Korean woman, slim, straight black hair tied in a tight mid-height ponytail reaching her shoulder blades, no bangs, forehead visible, no loose strands, long eyes with subtle inner double eyelids and slightly upturned outer corners, straight dark eyebrows, tiny mole just above the tail of her right eyebrow, light natural makeup, pale natural lips, calm slightly nervous expression, white round-neck blouse, charcoal suit jacket, no jewelry, plain light grey background, soft even front lighting, natural skin texture, ordinary person, not a model
+Realistic photo, front-facing waist-up portrait of a beautiful 25-year-old Korean woman with Korean drama lead actress-level looks and an adult face in her mid-twenties, slim, slender oval face with a softly defined jawline, clear luminous fair skin, straight black hair parted in the center and pulled back smoothly into a neat low bun at the nape of her neck, below ear level, exactly two short thin wisps falling beside her cheeks, all other hair pulled back, large clear dark eyes, straight dark eyebrows, one tiny dark mole on the middle of her nose bridge, sheer natural makeup, soft rosy-nude lips, lips closed, quiet composed neutral expression, slightly tense but focused, upright posture, white round-neck blouse, charcoal suit jacket, no jewelry, plain light grey background, soft even front lighting, natural skin texture. Not a teenager, not a student, no school uniform, no ponytail, no half-up hair, no top knot, no high bun, no bangs, no other moles, no teeth showing, no heavy makeup, no winged eyeliner, no blush.
 ```
 
 ## Soul ID 학습 사진 목록 (24장)
 
 공통 앞부분:
 ```
-Same woman as the reference image, same ponytail, same mole, same outfit, no bangs, no jewelry, face fully visible and evenly lit, no sunglasses, no harsh shadows,
+Same woman as the reference image, same beautiful face, same center part, same low bun at the nape, same two short wisps, same single mole on the nose bridge, same outfit, adult face, no bangs, no ponytail, no jewelry, face fully visible and evenly lit, no sunglasses, no harsh shadows,
 ```
 
 | # | 구도 | 각도 | 표정 | 붙일 지시 |
@@ -74,9 +88,9 @@ Same woman as the reference image, same ponytail, same mole, same outfit, no ban
 | 2 | 얼굴 클로즈업 | 정면 | 긴장한 미소 | close-up, facing camera, small nervous polite smile, plain light grey background |
 | 3 | 얼굴 클로즈업 | 정면 | 활짝 웃음 | close-up, facing camera, genuine open laugh, plain light grey background |
 | 4 | 얼굴 클로즈업 | 왼쪽 3/4 | 무표정 | close-up, head turned three-quarter to her left, neutral, plain light grey background |
-| 5 | 얼굴 클로즈업 | 오른쪽 3/4(점 보이는 쪽) | 미소 | close-up, head turned three-quarter to her right, slight smile, plain light grey background |
-| 6 | 얼굴 클로즈업 | 왼쪽 옆모습 | 무표정 | close-up, full left side profile, ponytail visible, neutral, plain light grey background |
-| 7 | 얼굴 클로즈업 | 오른쪽 옆모습 | 무표정 | close-up, full right side profile, ponytail visible, neutral, plain light grey background |
+| 5 | 얼굴 클로즈업 | 오른쪽 3/4 | 미소 | close-up, head turned three-quarter to her right, slight smile, plain light grey background |
+| 6 | 얼굴 클로즈업 | 왼쪽 옆모습 | 무표정 | close-up, full left side profile, low bun visible at the nape, neutral, plain light grey background |
+| 7 | 얼굴 클로즈업 | 오른쪽 옆모습 | 무표정 | close-up, full right side profile, low bun visible at the nape, neutral, plain light grey background |
 | 8 | 반신 | 정면 | 무표정 | waist-up, facing camera, neutral, plain light grey background |
 | 9 | 반신 | 정면 | 궁금함 | waist-up, facing camera, curious look, head slightly tilted, plain light grey background |
 | 10 | 반신 | 왼쪽 3/4 | 집중 | waist-up, three-quarter left, focused listening look, plain light grey background |
@@ -89,8 +103,8 @@ Same woman as the reference image, same ponytail, same mole, same outfit, no ban
 | 17 | 앉은 반신 | 정면 | 긴장 | seated on an office chair, waist-up, facing camera, nervous upright posture, plain light grey background |
 | 18 | 앉은 반신 | 옆모습 | 메모 중 | seated, side profile, writing in a notebook on her lap, plain light grey background |
 | 19 | 앉은 반신 | 3/4 | 안도한 웃음 | seated, three-quarter view, relieved smile, plain light grey background |
-| 20 | 전신 | 정면 | 무표정 | full body standing, facing camera, black shoulder bag on shoulder, black loafers visible, plain light grey background |
-| 21 | 전신 | 3/4 | 긴장 | full body standing, three-quarter view, both hands gripping bag strap, plain light grey background |
+| 20 | 전신 | 정면 | 무표정 | full body standing, facing camera, black single-strap shoulder bag, no backpack, black loafers visible, plain light grey background |
+| 21 | 전신 | 3/4 | 긴장 | full body standing, three-quarter view, both hands gripping the strap of her black single-strap shoulder bag, no backpack, plain light grey background |
 | 22 | 반신 | 정면 | 무표정 | waist-up, facing camera, neutral, bright white office wall background |
 | 23 | 반신 | 3/4 | 미소 | waist-up, three-quarter view, smile, bright small office background, soft daylight |
 | 24 | 얼굴 클로즈업 | 정면 | 의아함 | close-up, facing camera, puzzled frown, plain light grey background |
@@ -99,13 +113,14 @@ Same woman as the reference image, same ponytail, same mole, same outfit, no ban
 
 ## 메모
 - 잘 안 나올 것 같은 각도
-  - 완전 옆모습(6, 7, 13, 18): 포니테일 높이가 올라가거나(하이 포니테일) 내려가고(낮은 묶음), 코와 턱선이 다른 사람처럼 바뀌기 쉽습니다.
+  - 완전 옆모습(6, 7, 13, 18): 번이 정수리나 뒤통수 위로 올라가거나, 코와 턱선이 다른 사람처럼 바뀌기 쉽습니다.
   - 웃음(3, 19): AI가 쌍꺼풀을 크게 만들고 화장을 진하게 바꿔 "아이돌 화보"처럼 고치는 경향이 있습니다. 이것이 연애 느낌의 주원인입니다.
   - 고개 숙임(15, 16): 얼굴이 가려져 학습에 쓸모가 없어질 수 있습니다. 눈과 코가 안 보이면 버립니다.
 - 검수 때 볼 점
-  - 점: 본인 기준 오른쪽 눈썹 꼬리 바로 위에 있어야 합니다. 정면 사진에서는 보는 사람 기준 왼쪽에 보입니다. 좌우가 뒤집히면 버립니다.
-  - 머리: 앞머리가 생기거나, 머리를 풀었거나, 반묶음이면 버립니다.
-  - 눈: 속쌍꺼풀과 일자 눈썹이어야 합니다. 큰 쌍꺼풀이나 아치형 눈썹으로 바뀌면 버립니다.
+  - 점: 콧등 가운데 하나뿐이어야 합니다. 다른 곳에 있거나 2개 이상이면 버립니다.
+  - 머리: 앞머리, 푼 머리, 반묶음, 포니테일, 잔머리 3가닥 이상이면 버립니다.
+  - 눈썹: 일자 눈썹이어야 합니다. 아치형으로 바뀌면 버립니다.
+  - 입: 이가 보이면 버립니다.
   - 화장: 진한 입술색, 볼 터치, 아이라인 꼬리가 있으면 버립니다.
   - 의상: 블라우스가 칼라 셔츠로 바뀌거나 재킷이 검정·남색으로 바뀌면 버립니다. 차콜은 이사의 짙은 남색 정장과 구분되는 색입니다.
   - 나이: 25세로 보여야 합니다. 10대처럼 어려 보이면 버립니다.

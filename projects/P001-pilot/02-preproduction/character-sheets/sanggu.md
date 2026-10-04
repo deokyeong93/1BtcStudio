@@ -2,7 +2,19 @@
 
 > 작성: 서아(아트디렉터), 2026-10-04. 근거: [2단계 회의록](../../meetings/2026-10-04-preproduction-look.md) 10번, [캐릭터](../../01-development/characters.md)
 
-## 외모 시안
+## 외모 v2 (2026-10-04, 대표 지시) — 현재 기준
+대표가 v1 기준 얼굴을 "너무 비호감"이라 해서 바꿨습니다. 대표가 보여 준 참고 사진은 실존 배우라 얼굴은 따르지 않고, 밝은 웃상·듬직한 체격이라는 분위기만 가져왔습니다(사진은 레포에 두지 않음).
+- 인상: 드라마 주연급 미남. 웃으면 눈이 초승달이 되는, 키 크고 듬직한 동네 형. 순하고 장난기가 있습니다.
+- 머리: 짧고 단정한 검은 머리. 옆은 짧고 위는 살짝 볼륨. (v1의 뻗친 정수리를 없앰)
+- 눈: 웃으면 초승달처럼 휨. 처진 눈과 다크서클은 없앰.
+- 체형: 키 약 183cm, 어깨가 넓고 듬직함. 비만 아님, 이중턱 없음.
+- 피부: 밝은 황색 피부, 수염 없음. 41세로 보이도록 웃음 주름을 옅게.
+- 특징: 굵은 검정 동그란 뿔테 안경은 유지. 점은 "왼쪽 눈꼬리 아래 볼"로 옮김(테에 가려지지 않아 AI가 그리기 쉬움).
+- 의상: v1과 같음(wrinkled만 뺌).
+- 바꾼 이유: 체험 3회에서 chubby, double chin, droopy, dark circles, messy, tired 때문에 매번 고도비만에 지친 얼굴이 나왔습니다. 이 단어들을 지우고 not obese, no beard 같은 부정어를 붙였습니다. 멀리서 알아보는 특징은 뻗친 머리 대신 "큰 체격 + 동그란 안경 + 하늘색 셔츠와 베이지 재킷"입니다.
+- 검수: 단정하지 않은 머리, 비만, 수염, 사각 테가 나오면 버립니다. 웃는 얼굴에서 아는 배우가 떠오르면 기준 얼굴부터 다시 만듭니다.
+
+## 외모 시안 (v1, 대체됨)
 
 공통 조건(2단계 회의 10번): 둥글고 친근한 호감형이고 미남형은 아닙니다. 헝클어진 머리와 구김 간 셔츠를 입습니다. 안경과 머리 모양을 멀리서 보이는 특징으로 씁니다. 의상은 캐릭터 설정을 따르고 모든 샷에서 같습니다.
 
@@ -52,13 +64,13 @@
 - 시드:
 - Higgsfield Soul ID 이름: sanggu
 - Soul ID 등록일:
-- 고정 설명문: [reference-sheet.md](reference-sheet.md)의 sanggu v1
+- 고정 설명문: [reference-sheet.md](reference-sheet.md)의 sanggu v3
 - 메모: 아래 "메모"
 
-## 기준 얼굴 프롬프트 (Higgsfield Soul 이미지용)
+## 기준 얼굴 프롬프트 v2 (Higgsfield Soul 이미지용)
 
 ```
-Realistic photo, front-facing waist-up portrait of a 41-year-old Korean man, chubby round build, soft round face with a slight double chin, thick black round-frame glasses with clear lenses and no reflections, messy short black hair sticking up at the crown, kind slightly droopy eyes, faint dark circles, small brown mole on his left cheekbone just below the glasses frame, faint tired smile, wrinkled light blue oxford shirt with open collar and no tie, unbuttoned beige cotton blazer with sleeves pushed up to the forearms, plain light grey background, soft even front lighting, natural skin texture, ordinary person, not a model
+Realistic photo, front-facing waist-up portrait of a handsome 41-year-old Korean man with Korean drama lead actor-level looks, tall and broad-shouldered with a sturdy solid build, friendly face with a well-defined jaw, clear healthy skin, bright wide smile with his eyes curving into crescents, warm playful expression, neat short black hair with short sides and slight volume on top, thick black perfectly round-frame glasses with clear lenses and no reflections, one small dark brown mole on his left cheek below the outer corner of his left eye, seen on the right side of the image, faint smile lines, clean-shaven, light blue oxford shirt with open collar and no tie, unbuttoned beige cotton blazer with sleeves pushed up to the forearms, plain light grey background, soft even front lighting, natural skin texture. Not obese, not chubby, no double chin, no beard, no stubble, no dark circles, not tired, no square or rectangular glasses, no other moles.
 ```
 
 ## Soul ID 학습 사진 목록 (24장)
@@ -67,7 +79,7 @@ Realistic photo, front-facing waist-up portrait of a 41-year-old Korean man, chu
 
 공통 앞부분:
 ```
-Same man as the reference image, same glasses, same mole, same hair and outfit, face fully visible and evenly lit, no sunglasses, no harsh shadows, clear lenses without glare,
+Same man as the reference image, same handsome face, same round black glasses, same mole, same neat short hair, same sturdy build and outfit, clean-shaven, not obese, face fully visible and evenly lit, no sunglasses, no harsh shadows, clear lenses without glare,
 ```
 
 | # | 구도 | 각도 | 표정 | 붙일 지시 |
@@ -89,7 +101,7 @@ Same man as the reference image, same glasses, same mole, same hair and outfit, 
 | 15 | 반신 | 정면, 고개 숙임 | 집중 | waist-up, head tilted down as if reading paper, face still visible, focused, plain light grey background |
 | 16 | 반신 | 정면, 고개 듦 | 멍함 | waist-up, looking slightly upward, blank daydreaming look, plain light grey background |
 | 17 | 앉은 반신 | 정면 | 무표정 | seated on an office chair, waist-up, facing camera, neutral, plain light grey background |
-| 18 | 앉은 반신 | 3/4 | 피곤함 | seated, three-quarter view, tired sigh, shoulders slumped, plain light grey background |
+| 18 | 앉은 반신 | 3/4 | 멋쩍은 웃음 | seated, three-quarter view, sheepish grin, scratching the back of his head, plain light grey background |
 | 19 | 앉은 반신 | 정면 | 진지·단호 | seated, facing camera, serious determined expression, plain light grey background |
 | 20 | 전신 | 정면 | 무표정 | full body standing, facing camera, neutral, brown shoes visible, plain light grey background |
 | 21 | 전신 | 3/4 | 옅은 미소 | full body standing, three-quarter view, slight smile, plain light grey background |
@@ -103,12 +115,11 @@ Same man as the reference image, same glasses, same mole, same hair and outfit, 
 - 잘 안 나올 것 같은 각도
   - 높은 앵글(12, 13): 안경 렌즈에 빛이 반사되거나 테가 얇아집니다. 반사가 생기면 버립니다.
   - 옆모습(6, 7): 안경다리가 사라지거나 둥근 테가 사각으로 바뀌기 쉽습니다.
-  - 웃음(3): AI가 미남형으로 고쳐 그리는 경향이 있습니다(턱선이 날카로워지고 살이 빠짐).
 - 검수 때 볼 점
-  - 점: 본인 기준 왼쪽 광대, 안경테 바로 아래에 있어야 합니다. 정면 사진에서는 보는 사람 기준 오른쪽에 보입니다. 좌우가 뒤집힌 사진은 버립니다.
+  - 점: 본인 기준 왼쪽 눈꼬리 아래 볼에 있어야 합니다. 정면 사진에서는 보는 사람 기준 오른쪽에 보입니다. 좌우가 뒤집힌 사진은 버립니다.
   - 안경: 검정, 굵음, 동그라미 모양이어야 합니다. 금속테나 사각테로 바뀌면 버립니다.
-  - 머리: 정수리 뒤쪽이 뻗쳐 있어야 하고, 단정하게 빗은 머리는 버립니다. 흰머리가 없어야 합니다.
-  - 체형: 통통함이 유지되어야 합니다. 날씬해지면 버립니다.
+  - 머리: 짧고 단정해야 하고, 뻗치거나 헝클어진 머리는 버립니다. 흰머리가 없어야 합니다.
+  - 체형: 듬직해야 합니다. 비만이거나 날씬해지면 버립니다.
   - 나이: 41세로 보여야 합니다. 30대 초반처럼 매끈하거나 50대처럼 늙어 보이면 버립니다.
   - 셔츠: 삐져나온 쪽은 오른쪽으로 고정입니다.
   - 아는 연예인이나 실존 인물이 떠오르면 기준 얼굴부터 다시 만듭니다.

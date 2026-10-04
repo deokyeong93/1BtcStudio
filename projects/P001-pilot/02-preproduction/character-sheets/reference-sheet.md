@@ -5,17 +5,17 @@
 - 좌우는 인물 본인 기준입니다. 면접실 좌우는 "문에서 방 안을 바라본 기준"입니다.
 - 화면 질감(CCTV, 노이즈, 화질)은 여기에 넣지 않았습니다. 도윤(촬영감독)이 프롬프트에 붙입니다.
 
-## sanggu v1
+## sanggu v3
 ```
-sanggu: Korean man, 41, chubby round build, soft round face, thick black round-frame glasses, messy short black hair sticking up at the crown, kind droopy eyes, small mole on his left cheekbone below the glasses, wrinkled light blue oxford shirt, no tie, right shirttail untucked, unbuttoned beige cotton blazer with sleeves pushed up, dark grey slacks, brown shoes
+sanggu: handsome Korean man, 41, actor-level looks, tall, broad-shouldered, sturdy solid build, not obese, friendly face, clear skin, warm bright eyes, neat short black hair with slight volume on top, thick black perfectly round glasses, small mole on left cheek, clean-shaven, light blue oxford shirt, no tie, right shirttail untucked, unbuttoned beige blazer, sleeves pushed up, dark grey slacks, brown shoes
 ```
-풀이: 41세 통통한 한국 남자입니다. 굵은 검정 둥근 안경을 쓰고 정수리 머리가 뻗쳐 있으며 왼쪽 광대에 점이 있습니다. 구김 간 연하늘 셔츠의 오른쪽 자락이 나와 있고, 소매를 걷은 베이지 재킷을 입었습니다.
+풀이: 41세 한국 남자입니다. 드라마 주연급 미남이고, 키가 크고 어깨가 넓은 듬직한 체격입니다(비만 아님). 짧고 단정한 머리에 굵은 검정 동그란 안경을 쓰고, 왼쪽 볼에 점이 있습니다. 의상은 v1과 같습니다. 상구는 무표정이 기본이라 웃음은 넣지 않고 표정은 샷 문장에서 정합니다.
 
-## eunsol v1
+## eunsol v3
 ```
-eunsol: Korean woman, 25, slim, straight black hair in a tight mid-height ponytail to her shoulder blades, no bangs, long eyes with subtle inner double eyelids, straight dark eyebrows, tiny mole above her right eyebrow tail, light natural makeup, white round-neck blouse, charcoal suit jacket and trousers, black shoulder bag, small black notebook, black loafers
+eunsol: beautiful Korean woman, 25, actress-level looks, adult face, slim, clear fair skin, black hair center-parted in a neat low bun at the nape, two short face-framing wisps, large clear dark eyes, straight dark eyebrows, tiny mole on her nose bridge, sheer makeup, rosy-nude lips, white round-neck blouse, charcoal suit jacket and trousers, black single-strap shoulder bag on her right shoulder, small black notebook, black loafers, no ponytail, no backpack
 ```
-풀이: 25세 마른 한국 여자입니다. 중간 높이 포니테일에 앞머리가 없고, 속쌍꺼풀 긴 눈과 일자 눈썹에 오른쪽 눈썹 위 점이 있습니다. 흰 블라우스와 차콜 정장을 입고 검은 숄더백과 수첩을 들었습니다.
+풀이: 25세 마른 한국 여자, 드라마 주연급 미녀입니다. 가운데 가르마에 목덜미 로우 번, 얼굴 옆 잔머리 두 가닥. 크고 또렷한 검은 눈에 일자 눈썹, 콧등에 점 하나. 의상은 v1과 같고 가방은 끈 하나짜리 숄더백입니다.
 
 ## manseok v1
 ```
@@ -44,9 +44,9 @@ interview-room: small, slightly worn Korean IT company meeting room, white walls
 - 대표 자리는 책상 왼쪽, 이사 자리는 책상 오른쪽 끝입니다. 모든 샷에서 바꾸지 않습니다.
 - 창이 왼쪽(서쪽) 벽에 있어서 오후 햇빛과 노을이 같은 방향에서 들어옵니다.
 
-## interview-room v2
+## interview-room v3
 ```
-interview-room: small, slightly worn Korean IT company meeting room, white walls, ceiling fluorescent panels. Grey desk near the door wall, two black office chairs behind it with backs to the door; one applicant chair facing the desk. Window with white blinds on one side wall. Door in the door-wall corner farthest from the window, CCTV above it.
+interview-room: small, slightly worn Korean IT company meeting room, white walls, ceiling fluorescent panels. Grey desk near the door wall, two black office chairs behind it with backs to the door; one applicant chair facing the desk. Window with white blinds on one side wall, whiteboard on the wall opposite the window. Door in the door-wall corner farthest from the window, CCTV above it.
 ```
 풀이: v1과 같은 방입니다. "앞-오른쪽, 왼쪽 벽, 안쪽 오른쪽" 같은 좌우 단어를 빼고, 창은 "한쪽 옆벽", 문은 "문 쪽 벽에서 창과 가장 먼 모서리"로 적었습니다. 천장 CCTV 위치 문장도 뺐습니다. 이 카메라는 자기 화면에 나오지 않고, 위치는 각 프롬프트 첫 줄이 정합니다.
 
@@ -123,10 +123,14 @@ prop-phone-eunsol: a slim smartphone in a smooth pale lavender silicone case, sm
 - v1 (2026-10-04): 최초 작성.
 - v2 (2026-10-04): interview-room, light-afternoon, light-dusk에서 좌우 단어(front-right, left wall, back-right, left-wall)를 뺐습니다. 천장 CCTV 화면에서는 좌우가 반대로 보여 프롬프트의 화면 기준 문장과 충돌했기 때문입니다. interview-room은 천장 CCTV 위치 문장도 뺐습니다. sanggu, eunsol, manseok, applicant, light-day는 v1 그대로입니다.
 - 소품 v1 (2026-10-04): prop-printout, prop-note, prop-phone-sanggu, prop-phone-eunsol을 추가했습니다.
+- eunsol v3, interview-room v3 (2026-10-04, S05 검수 반영): 가방을 본인 오른쪽 어깨로 고정("on her right shoulder"), 창 맞은편 벽에 화이트보드 추가(B05·S05에 나온 것을 기준으로). 프롬프트도 교체.
+- eunsol v2 (2026-10-04, 대표 지시): 포니테일→가운데 가르마 로우 번+잔머리 두 가닥, 점→콧등 가운데, 속쌍꺼풀→크고 또렷한 눈, actress-level looks·adult face·no ponytail·no backpack 추가. 체험 검수(정수리 묶음, 점 좌우 뒤집힘, 10대 같음, 백팩) 반영. 프롬프트의 eunsol 문단도 v2로 교체.
+- sanggu v3 (2026-10-04): 외모 원칙 변경(주인공은 주연급 미남·미녀)으로 actor-level looks 추가, chubby와 round face 삭제. 프롬프트도 v3로 교체.
+- sanggu v2 (2026-10-04, 대표 지시): 지친 인상 단어(chubby, droopy, messy 등)를 빼고 키 크고 듬직한 체형과 단정한 머리로 바꿈. 점은 왼쪽 볼로 옮김. not obese, clean-shaven 추가. 프롬프트 S01~S16·base-images의 sanggu 문단도 v2로 교체.
 
 ## 확인 필요 6번 답 (가까이서만 보이는 특징)
-- 상구: 본인 기준 왼쪽 광대 위, 안경테 바로 아래의 작은 갈색 점
-- 은솔: 본인 기준 오른쪽 눈썹 꼬리 바로 위의 작은 점
+- 상구: 본인 기준 왼쪽 눈꼬리 아래 볼의 작은 갈색 점 (v2)
+- 은솔: 콧등 가운데 작은 점 (v2)
 - 이유: AI가 가장 안정적으로 다시 그리는 특징이 점입니다. 흉터, 피어싱 구멍, 수염 자국은 샷마다 사라지거나 위치가 바뀝니다. 두 사람의 점은 좌우와 높이를 다르게 해서 겹치지 않게 했습니다. 이 특징이 실제로 보이는 곳은 기준 얼굴, 학습 사진, 씬 5 정도입니다. CCTV 와이드에서는 안 보여도 검수에서 문제 삼지 않습니다.
 
 ## 넘김 메모
