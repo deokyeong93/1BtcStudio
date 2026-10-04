@@ -22,3 +22,9 @@
 | 2026-10-04 | Higgsfield MCP | kling3_0 pro 10초 | 샷 S05 | - | - | 0 | 실패: "Requires plus plan or higher" | Basic에서는 Kling 3.0 생성 불가(단가 조회만 됨) |
 | 2026-10-04 | Higgsfield MCP | seedance_2_0 fast 720p 10초 (소리 켜짐) | 샷 S05 v2 | [S05.md](prompts/S05.md), B05 v2b를 start_image로 | - | 25 | 폐기: 0~8초가 B05와 다른 낮은 앵글, 8~9초에 B05 구도로 컷 튐. 인사 동작·얼굴·가방은 통과 | Kling 3.0 대신 Basic에서 되는 모델 |
 | 2026-10-04 | Higgsfield MCP | seedance_2_0 fast 720p 10초, 소리 끔, 비율 auto | 샷 S05 v3 | v2 + 첫 줄 "첫 프레임 그대로 시작, 카메라 고정, 컷 없음", generate_audio false, aspect_ratio auto | - | 25 | **채택**(서아 approved). 기록: 잔머리 몇 가닥, 화이트보드 모서리 자국 | 파일 media/P001_shot_S05_v3.mp4 |
+| 2026-10-04 | Higgsfield MCP | gpt_image_2_5 medium | 첫 장면 B05 v3 | [base-images.md](prompts/base-images.md) B05, 은솔 v5a 얼굴만 참고, 의상 eunsol v4 | - | 0.5 | 채택(서아). 기록: 무릎 대신 허벅지까지, 점이 볼에, 미소가 옅음 | 캐주얼·밝은 방 첫 장면 |
+| 2026-10-04 | Higgsfield MCP | seedance_2_0 std 720p 5초 | 샷 S05 v4 | - | - | 0 | 실패: "Requires plus plan or higher" | std 모드도 Plus 필요 |
+| 2026-10-04 | Higgsfield MCP | seedance_2_0 fast 720p 5초, 소리 끔 | 샷 S05 v4 | [S05.md](prompts/S05.md) 최신 | - | 12.5 | **채택**(서아 approved). 기록: 다가가는 속도가 빠름(5초에 전신→가슴), 책상 위 클립보드 | media/P001_shot_S05_v4.mp4 |
+| 2026-10-04 | Higgsfield MCP | gpt_image_2_5 medium | 첫 장면 B17 v1 | base-images.md B17, 참고 사진 없이 sanggu v4 설명문만 | - | 0.5 | 채택(서아). 기록: 왼쪽 볼 점 없음, 보통 체격, 뒤 벽 영어 포스터 | 승인된 상구 기준 얼굴 없음 |
+| 2026-10-04 | Higgsfield MCP | seedance_2_0_mini 720p 5초, 소리 끔 | 샷 S17 v1 | [S17.md](prompts/S17.md), 첫 장면 B17 v1, 아주 천천히 다가감 | - | 5 | 폐기: 5초 만에 얼굴 클로즈업까지 다가가 손·볼펜이 화면 밖, 고개 숙여 볼펜 봄, 끝 표정이 의아함 | |
+| 2026-10-04 | Higgsfield MCP | seedance_2_0_mini 480p 5초, 소리 끔 | 샷 S17 v2 | v1에서 카메라 완전 고정 | - | 2.5 | 부분 사용(서아 redo, 0~3초만 사용): 볼펜 멈춤→떨어짐 보임, 3초 뒤 고개 숙임 | 미리보기 media/P001_preview_scene5_v1.mp4 (S05 v4 5초 + S17 v2 0~3초) |
