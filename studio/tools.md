@@ -19,7 +19,7 @@
 ## 툴별 메모
 툴을 쓰면서 알게 된 요령과 한계를 짧게 적습니다. 오류가 길어지면 `tool-issue` 이슈로 따로 기록합니다.
 
-- **Grok**:
+- **Grok**: 커스텀 에이전트 = 직원. 최대 4명, 지시문 4,000자, Expert 모드에서 서로 토론. 채용·운영 방법은 [agents/README.md](agents/README.md)
 - **Higgsfield**:
 - **ElevenLabs**:
 - **Suno**:

@@ -29,6 +29,7 @@ studio/            ← 스튜디오 운영 문서
   tools.md           툴별 용도·요금제·상업 이용 여부
   budget.md          월 구독료·크레딧 사용 내역
   licenses.md        생성물의 상업적 이용 조건
+  agents/            Grok 직원(에이전트) 채용 가이드북·지시문 원본
   decisions/         결정 기록 (왜 그렇게 정했나)
 templates/project/ ← 새 작품을 시작할 때 복사되는 틀
 projects/          ← 실제 작품 (P001-pilot/ ...)
