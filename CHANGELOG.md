@@ -22,6 +22,7 @@
 - 스크립트: `new-project.sh`(새 작품 생성), `setup-github.sh`(라벨·마일스톤·보드·초기 이슈), `board-add.sh`(이슈를 보드에 추가)
 - 미디어 원본 git 제외 규칙(`.gitignore`)
 - Grok 직원 채용 가이드북 [studio/agents](studio/agents/README.md), 스튜디오 스타일([studio-style](studio/agents/studio-style.md)), 직원 4명 지시문 초안(하린·도윤·서아·준호)
+- Grok 봇 세팅 가이드 [grok-bot](studio/agents/grok-bot.md) (커스텀 에이전트의 역할 혼동 문제 대안)
 
 ### 작품
 - P001 파일럿 단편 착수: [projects/P001-pilot](projects/P001-pilot/) 생성 (`scripts/new-project.sh`로 생성)
