@@ -29,6 +29,11 @@
 - 외모 원칙 변경: 남주·여주는 드라마 주연급 미남·미녀, 주변 인물은 깨끗한 호감형, 비호감 역할만 예외 ([art.md](studio/agents/art.md))
 - 자동 진행 스킬 `/1btcstudio-1step`: `기획 <주제>`로 새 작품 기획부터 예상 크레딧까지, `생성 <한도>`로 Higgsfield MCP 생성·검수 자동, `후반 <한도>`로 내레이션 음성·가편집본
 
+### 변경
+- 직원 호출을 병렬 서브에이전트에서 직렬 단계 스킬 `/1btcstudio-0step-series`~`7step-release`로 바꿈. `/1btcstudio`는 다음 단계만 고른다. 대사·연출 기준은 [dialogue-style](studio/agents/dialogue-style.md), [direction-style](studio/agents/direction-style.md). 얼굴·의상·장소·목소리는 작품 `base.md`에 경로와 id만 잠근다.
+- 캐릭터 디자인을 [casting-style](studio/agents/casting-style.md)로 교체. 주연급 미남·미녀와 주변 호감형 원칙은 더 이상 쓰지 않음.
+- `/1btcstudio-04step-prepare`: 0단계 보충만으로 4단계 프롬프트 검수까지 직렬 진행. 생성은 하지 않음.
+
 ### 작품
 - P001 파일럿 단편 착수: [projects/P001-pilot](projects/P001-pilot/) 생성 (`scripts/new-project.sh`로 생성)
 - P001 파일럿 구성 회의 ([회의록](projects/P001-pilot/meetings/2026-10-04-pilot-structure.md))

@@ -36,10 +36,12 @@
 | 썸네일 | | |
 
 ## 폴더 안내
-- `01-development/`: 로그라인, 시놉시스, 대본, 캐릭터
+- `base.md`: 얼굴·의상·장소·목소리 잠금 (경로와 id만)
+- `continuity.md`: 시리즈 판정
+- `01-development/`: 로그라인, 시놉시스, 대본, 캐릭터, 대본 검수
 - `02-preproduction/`: 샷 리스트, 콘티, 캐릭터 시트
-- `03-production/`: 샷별 프롬프트, 생성 작업 일지
+- `03-production/`: 샷별 프롬프트, 프롬프트 검수, 생성 작업 일지
 - `04-post/`: 음성, 음악, 편집 메모, 자막
-- `05-distribution/`: YouTube 업로드 정보
+- `05-distribution/`: YouTube 문장 (업로드는 대표가 직접)
 - `CHANGELOG.md`: 산출물 버전 기록
 - `retrospective.md`: 작품 회고 (완료 후 작성)

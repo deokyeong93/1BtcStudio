@@ -1,0 +1,41 @@
+---
+name: 1btcstudio-04step-prepare
+description: 0단계 보충만 받아서 4단계 프롬프트 검수까지 직렬로 진행한다. 하린·서아·준호·도윤이 한 명씩 일하고 대표에게 묻지 않는다. 생성하지 않는다. "/1btcstudio-04step-prepare", "0부터 4까지", "물어보지 말고 준비까지", "한 번에 대본이랑 프롬프트까지"라고 하면 이 스킬을 쓴다.
+---
+
+# /1btcstudio-04step-prepare — 0부터 4까지
+
+대표 입력은 0단계 보충뿐이다. 주제, 길이, 시리즈로 이어갈 힌트가 들어 있으면 그 문장만 쓴다. 부족한 칸은 하린이 정한다. 대표에게 고르라고 묻지 않고, 단계 사이에 멈추지 않는다. 서브에이전트를 부르지 않는다. 한 명씩 순서대로 한다. 이미지는 생성하지 않는다. 커밋하지 않는다.
+
+보충 문장이 없으면 주제를 만들지 않고 멈춘다.
+
+## 순서
+각 단계의 작업과 기록은 그 스킬 파일을 읽고 따른다. 그 파일의 "이 단계만 끝내고 멈춘다"와 단계마다 대표에게 보고하고 돌아가는 규칙은 여기서 적용하지 않는다. 파일은 그대로 쓴다. 대표 보고는 마지막에 한 번이다.
+
+1. `.claude/skills/1btcstudio-0step-series/SKILL.md`
+2. `.claude/skills/1btcstudio-1step-story/SKILL.md`
+3. `.claude/skills/1btcstudio-2step-storycheck/SKILL.md`
+4. `.claude/skills/1btcstudio-3step-prep/SKILL.md`
+5. `.claude/skills/1btcstudio-4step-promptcheck/SKILL.md`
+
+앞 단계 파일이 있어야 다음으로 간다.
+
+- 0 뒤: `studio/series.md`에 이번 판정이 있다.
+- 1 뒤: 대본이 있고 맨 위가 `상태: 막힘`이 아니다. 막힘이면 2로 가지 않는다.
+- 2 뒤: `script-review.md` 마지막 줄이 `통과`다. `막힘`이면 3으로 가지 않는다.
+- 3 뒤: 샷 프롬프트와 `credit-estimate.md`가 있다. 단가 조회(`get_cost: true`)만 허용한다.
+- 4 뒤: `prompt-review.md` 마지막 줄이 `통과` 또는 `막힘`이다.
+
+4가 끝나도 5단계 생성으로 넘어가지 않는다. `get_cost` 외의 Higgsfield 호출, 음성 생성, YouTube 업로드를 하지 않는다.
+
+## 보고
+```
+결과: (0~4 중 끝난 단계. 막힌 단계가 있으면 거기까지)
+판정: (시리즈 또는 새 이야기)
+대본 검수: (통과, 막힘, 하지 않음)
+프롬프트 검수: (통과, 막힘, 하지 않음)
+예상 크레딧: (있으면 숫자, 없으면 없음)
+기록: (파일 경로)
+다음: (프롬프트 검수 통과면 /1btcstudio-5step-generate <예상+여유>. 막힘이면 막힌 단계와 남은 항목)
+승인 필요: 없음
+```

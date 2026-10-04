@@ -7,7 +7,7 @@
 
 | 툴 | 단계 | 용도 | 요금제 / 월 요금 | 계정 (가입 이메일) | 상업 이용 | 확인일 |
 |---|---|---|---|---|---|---|
-| Claude Code (직원팀) | 1~5 | `/1btcstudio`: 회의, 시나리오, 캐릭터 설정, 샷 리스트, 프롬프트, 메타데이터 | 확인 필요 | | 확인 필요 | |
+| Claude Code (직원팀) | 1~5 | `/1btcstudio`와 단계 스킬 0~7: 시리즈 판정, 대본, 검수, 샷, 생성 지시, 메타데이터 | 확인 필요 | | 확인 필요 | |
 | Higgsfield AI | 2·3·4 | 캐릭터 시트, Soul ID, 샷 영상 생성, Lipsync Studio | 확인 필요 | | 확인 필요 | |
 | ElevenLabs | 4 | 대사·내레이션 음성, 효과음 | 확인 필요 | | 확인 필요 | |
 | sync.so | 4 | 립싱크 대안 (Higgsfield 립싱크가 부족할 때만) | 미가입 | | 확인 필요 | |
@@ -20,7 +20,7 @@
 처음 쓰는 방법은 [tool-guide.md](tool-guide.md)를 봅니다.
 툴을 쓰면서 알게 된 요령과 한계를 짧게 적습니다. 오류가 길어지면 `tool-issue` 이슈로 따로 기록합니다.
 
-- **Claude Code 직원팀**: 직원 5명 = 서브에이전트, 회의 한 번에 약 9회 호출. 사용법은 [agents/README.md](agents/README.md)
+- **Claude Code 직원팀**: 단계 스킬이 한 명씩 순서대로 일한다. 사용법은 [agents/README.md](agents/README.md)
 - **Higgsfield**:
 - **ElevenLabs**:
 - **Suno**:
