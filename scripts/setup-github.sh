@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# GitHub 초기 설정: 라벨 → 마일스톤 → 프로젝트 보드 → 초기 이슈(M0, P001)
+# GitHub 초기 설정: 라벨 → 마일스톤 → 프로젝트 보드 → 초기 이슈(M0)
 # 여러 번 실행해도 이미 있는 것은 건너뛴다.
 # 준비: 레포 생성·push, gh auth refresh -s project
 set -euo pipefail
@@ -40,7 +40,7 @@ tool:editor|BFD4F2|DaVinci Resolve / CapCut
 tool:youtube|FF0000|YouTube
 EOF
 
-echo "== 2. 마일스톤 (P001은 4단계에서 new-project.sh가 생성)"
+echo "== 2. 마일스톤"
 gh api "repos/$repo/milestones?state=all" --paginate --jq '.[].title' | grep -qxF "$M0" \
   || gh api "repos/$repo/milestones" -f title="$M0" -f description="툴 세팅, 운영 규칙, 예산·저장소 결정" >/dev/null
 
@@ -90,8 +90,6 @@ done <<'EOF'
 [결정] 원본 미디어 저장소|decision.md|stage:0-studio,type:decision
 EOF
 if [ ${#urls[@]} -gt 0 ]; then scripts/board-add.sh "${urls[@]}"; fi
-
-scripts/new-project.sh --issues P001-pilot "P001 파일럿 단편"
 
 echo
 echo "✔ 완료. 보드 화면에서 레이아웃을 Table → Board로 바꾸면 칸(Backlog/In progress/Review/Done) 형태로 보입니다."

@@ -34,6 +34,8 @@
 - 캐릭터 디자인을 [casting-style](studio/agents/casting-style.md)로 교체. 주연급 미남·미녀와 주변 호감형 원칙은 더 이상 쓰지 않음.
 - `/1btcstudio-04step-prepare`: 0단계 보충만으로 4단계 프롬프트 검수까지 직렬 진행. 생성은 하지 않음.
 
+### 제거
+- P001 파일럿 단편 폴더 삭제. 옛 프롬프트로 만든 대본·시트·샷·예고편을 폐기.
+
 ### 작품
-- P001 파일럿 단편 착수: [projects/P001-pilot](projects/P001-pilot/) 생성 (`scripts/new-project.sh`로 생성)
-- P001 파일럿 구성 회의 ([회의록](projects/P001-pilot/meetings/2026-10-04-pilot-structure.md))
+- P001 파일럿 단편을 착수했다가 같은 날 폴더를 삭제함.
