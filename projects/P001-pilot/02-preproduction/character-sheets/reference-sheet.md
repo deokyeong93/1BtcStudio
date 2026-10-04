@@ -5,11 +5,11 @@
 - 좌우는 인물 본인 기준입니다. 면접실 좌우는 "문에서 방 안을 바라본 기준"입니다.
 - 카메라 위치·렌즈·심도는 여기에 넣지 않았습니다. 도윤(촬영감독)이 프롬프트에 붙입니다. 노이즈·저화질은 쓰지 않습니다.
 
-## sanggu v4
+## sanggu v5
 ```
-sanggu: handsome Korean man, 41, actor-level looks, tall, broad-shouldered, sturdy solid build, not obese, friendly face, clear skin, warm bright eyes, neat short black hair with slight volume on top, thick black perfectly round glasses, small mole on left cheek, clean-shaven, unbuttoned light blue oxford shirt worn open over a plain white crew-neck T-shirt, sleeves rolled to the forearms, right shirttail hanging lower, beige chino pants, white canvas sneakers
+sanggu: handsome Korean man, 41, actor-level looks, tall, broad-shouldered, slightly chubby with soft round cheeks and a little belly, still handsome, not obese, no double chin, friendly face, clear skin, warm bright eyes, neat short black hair with slight volume on top, thick black perfectly round glasses, small mole on left cheek, clean-shaven, unbuttoned light blue oxford shirt worn open over a plain white crew-neck T-shirt, sleeves rolled to the forearms, right shirttail hanging lower, beige chino pants, white canvas sneakers
 ```
-풀이: 41세 한국 남자, 드라마 주연급 미남. 키가 크고 어깨가 넓은 듬직한 체격(비만 아님), 짧고 단정한 머리, 굵은 검정 동그란 안경, 왼쪽 볼 점. 흰 티셔츠 위에 하늘색 셔츠를 열어 입고 베이지 치노 바지에 흰 운동화. 표정은 샷 문장에서 정합니다.
+풀이: 41세 한국 남자, 드라마 주연급 미남. 키가 크고 어깨가 넓으며 살짝 통통하고 푸근한 체격(둥근 볼, 배가 조금, 비만·이중턱 아님), 짧고 단정한 머리, 굵은 검정 동그란 안경, 왼쪽 볼 점. 흰 티셔츠 위에 하늘색 셔츠를 열어 입고 베이지 치노 바지에 흰 운동화. 표정은 샷 문장에서 정합니다.
 
 ## eunsol v4
 ```
@@ -89,6 +89,7 @@ prop-phone-eunsol: a slim smartphone in a smooth pale lavender silicone case, sm
 볼펜과 이력서는 고정 설명문을 만들지 않습니다(와이드에서만 작게 나옴).
 
 ## 변경 기록
+- sanggu v5 (2026-10-04, 대표 지시): 체형 sturdy solid build → slightly chubby with soft round cheeks and a little belly, still handsome, no double chin. 나머지는 v4 그대로.
 - sanggu v4, eunsol v4, manseok v2, applicant v3 (2026-10-04, 대표 지시): 정장을 IT 스타트업 캐주얼로 교체(상구 하늘색 셔츠+흰 티+베이지 치노, 은솔 버터 옐로 카디건+청바지, 이사 남색 반집업 니트, 지원자 [COLOR] 니트). 얼굴·머리·점·안경은 그대로. 은솔 가방과 수첩 유지.
 - v1 (2026-10-04): 최초 작성.
 - v2 (2026-10-04): interview-room, light-afternoon, light-dusk에서 좌우 단어(front-right, left wall, back-right, left-wall)를 뺐습니다. 카메라에 따라 좌우가 반대로 보여 혼동되었기 때문입니다. sanggu, eunsol, manseok, applicant, light-day는 v1 그대로입니다.

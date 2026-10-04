@@ -4,10 +4,10 @@
 
 ## 외모 v2 (2026-10-04, 대표 지시) — 현재 기준
 대표가 v1 기준 얼굴을 "너무 비호감"이라 해서 바꿨습니다. 대표가 보여 준 참고 사진은 실존 배우라 얼굴은 따르지 않고, 밝은 웃상·듬직한 체격이라는 분위기만 가져왔습니다(사진은 레포에 두지 않음).
-- 인상: 드라마 주연급 미남. 웃으면 눈이 초승달이 되는, 키 크고 듬직한 동네 형. 순하고 장난기가 있습니다.
+- 인상: 드라마 주연급 미남. 웃으면 눈이 초승달이 되는, 키 크고 살짝 통통하고 푸근한 동네 형. 순하고 장난기가 있습니다.
 - 머리: 짧고 단정한 검은 머리. 옆은 짧고 위는 살짝 볼륨. (v1의 뻗친 정수리를 없앰)
 - 눈: 웃으면 초승달처럼 휨. 처진 눈과 다크서클은 없앰.
-- 체형: 키 약 183cm, 어깨가 넓고 듬직함. 비만 아님, 이중턱 없음.
+- 체형: 키 약 183cm, 어깨가 넓고 살짝 통통하며 푸근함. 비만 아님, 이중턱 없음.
 - 피부: 밝은 황색 피부, 수염 없음. 41세로 보이도록 웃음 주름을 옅게.
 - 특징: 굵은 검정 동그란 뿔테 안경은 유지. 점은 "왼쪽 눈꼬리 아래 볼"로 옮김(테에 가려지지 않아 AI가 그리기 쉬움).
 - 의상: v4 캐주얼(2026-10-04, 대표 지시). 흰 티셔츠 위에 하늘색 옥스퍼드 셔츠를 열어 입고, 베이지 치노 바지에 흰 운동화.
@@ -69,7 +69,7 @@
 ## 기준 얼굴 프롬프트 v2 (Higgsfield Soul 이미지용)
 
 ```
-Realistic photo, front-facing waist-up portrait of a handsome 41-year-old Korean man with Korean drama lead actor-level looks, tall and broad-shouldered with a sturdy solid build, friendly face with a well-defined jaw, clear healthy skin, bright wide smile with his eyes curving into crescents, warm playful expression, neat short black hair with short sides and slight volume on top, thick black perfectly round-frame glasses with clear lenses and no reflections, one small dark brown mole on his left cheek below the outer corner of his left eye, seen on the right side of the image, faint smile lines, clean-shaven, unbuttoned light blue oxford shirt worn open over a plain white crew-neck T-shirt, sleeves rolled to the forearms, plain light grey background, soft even front lighting, natural skin texture. Not obese, not chubby, no double chin, no beard, no stubble, no dark circles, not tired, no square or rectangular glasses, no other moles.
+Realistic photo, front-facing waist-up portrait of a handsome 41-year-old Korean man with Korean drama lead actor-level looks, tall and broad-shouldered, slightly chubby with soft round cheeks and a little belly, still handsome, friendly face, clear healthy skin, bright wide smile with his eyes curving into crescents, warm playful expression, neat short black hair with short sides and slight volume on top, thick black perfectly round-frame glasses with clear lenses and no reflections, one small dark brown mole on his left cheek below the outer corner of his left eye, seen on the right side of the image, faint smile lines, clean-shaven, unbuttoned light blue oxford shirt worn open over a plain white crew-neck T-shirt, sleeves rolled to the forearms, plain light grey background, soft even front lighting, natural skin texture. Not obese, no double chin, no beard, no stubble, no dark circles, not tired, no square or rectangular glasses, no other moles.
 ```
 
 ## Soul ID 학습 사진 목록 (24장)
@@ -78,7 +78,7 @@ Realistic photo, front-facing waist-up portrait of a handsome 41-year-old Korean
 
 공통 앞부분:
 ```
-Same man as the reference image, same handsome face, same round black glasses, same mole, same neat short hair, same sturdy build and outfit, clean-shaven, not obese, face fully visible and evenly lit, no sunglasses, no harsh shadows, clear lenses without glare,
+Same man as the reference image, same handsome face, same round black glasses, same mole, same neat short hair, same slightly chubby build with a little belly, same outfit, clean-shaven, not obese, face fully visible and evenly lit, no sunglasses, no harsh shadows, clear lenses without glare,
 ```
 
 | # | 구도 | 각도 | 표정 | 붙일 지시 |
@@ -118,7 +118,7 @@ Same man as the reference image, same handsome face, same round black glasses, s
   - 점: 본인 기준 왼쪽 눈꼬리 아래 볼에 있어야 합니다. 정면 사진에서는 보는 사람 기준 오른쪽에 보입니다. 좌우가 뒤집힌 사진은 버립니다.
   - 안경: 검정, 굵음, 동그라미 모양이어야 합니다. 금속테나 사각테로 바뀌면 버립니다.
   - 머리: 짧고 단정해야 하고, 뻗치거나 헝클어진 머리는 버립니다. 흰머리가 없어야 합니다.
-  - 체형: 듬직해야 합니다. 비만이거나 날씬해지면 버립니다.
+  - 체형: 살짝 통통해야 합니다(둥근 볼, 배가 조금 나옴). 비만이거나 이중턱이 생기거나, 마르거나 보통 체격이면 버립니다.
   - 나이: 41세로 보여야 합니다. 30대 초반처럼 매끈하거나 50대처럼 늙어 보이면 버립니다.
   - 셔츠: 삐져나온 쪽은 오른쪽으로 고정입니다.
   - 아는 연예인이나 실존 인물이 떠오르면 기준 얼굴부터 다시 만듭니다.

@@ -59,7 +59,7 @@
 3. 실존 인물과 닮지 않게 하는 장치: 흔한 큰 쌍꺼풀 눈 대신 속쌍꺼풀과 일자 눈썹, 그리고 오른쪽 눈썹 위 점을 함께 고정합니다.
 
 ## 캐릭터 시트
-- 이미지 링크: (P001_char_eunsol_v1.png — 생성 후 기입)
+- 이미지 링크: [P001_char_eunsol_v5a.png](../../media/P001_char_eunsol_v5a.png) (대표 확정 2026-10-04 "딱이네 이쁘네", 장면 기준은 P001_base_B05_v3.png)
 - 생성 툴·모델: Higgsfield Image, Soul 모델(기준 얼굴·학습 사진) → Higgsfield Soul "Train new character"(Soul ID 학습)
 - 프롬프트: 아래 "기준 얼굴 프롬프트"
 - 시드:
