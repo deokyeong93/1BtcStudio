@@ -9,7 +9,7 @@
 |---|---|---|---|---|---|---|---|---|
 | 2026-10-04 | Higgsfield MCP | soul_2 (3:4) | 기준 얼굴 sanggu v1 | [sanggu.md](../02-preproduction/character-sheets/sanggu.md) 기준 얼굴 프롬프트 | - | 0.12 | 폐기: 점 없음, 사각 테, 고도비만, 수염 | 체험 |
 | 2026-10-04 | Higgsfield MCP | soul_2 (3:4) | 기준 얼굴 eunsol v1 | [eunsol.md](../02-preproduction/character-sheets/eunsol.md) 기준 얼굴 프롬프트 | - | 0.12 | 폐기: 반묶음처럼 보임, 점 좌우 뒤집힘, 점 추가, 10대 같음 | 체험 |
-| 2026-10-04 | Higgsfield MCP | soul_2 (16:9) | 방 R1 | [base-images.md](prompts/base-images.md) R1 | - | 0.12 | 채택 | CCTV 몸체가 안쪽 벽 오른쪽 모서리에 있음(도윤: 다시 만들지 않음, B 이미지에서 지울지 서아 확인) |
+| 2026-10-04 | Higgsfield MCP | soul_2 (16:9) | 방 R1 | [base-images.md](prompts/base-images.md) R1 | - | 0.12 | 채택 | 카메라 몸체가 안쪽 벽 오른쪽 모서리에 있음(도윤: 다시 만들지 않음, B 이미지에서 지울지 서아 확인. → 서아: 폐기, 화면 변경으로 v4와 다른 방) |
 | 2026-10-04 | Higgsfield MCP | soul_2 (3:4) | 기준 얼굴 sanggu v2 | v1 + 부정어(not obese, not square frames, 점 화면 오른쪽, clean-shaven) | - | 0.12 | 폐기: 사각 테, 점 없음, 비만, 수염 | 도윤 재생성 지시 |
 | 2026-10-04 | Higgsfield MCP | soul_2 (3:4) | 기준 얼굴 eunsol v2 | v1 + 부정어(not a teenager, 머리 뒤로, 점 화면 왼쪽, 다른 점 없음) | - | 0.12 | 폐기: 반묶음, 점 위치 틀림·추가, 10대 같음 | 도윤 재생성 지시 |
 | 2026-10-04 | Higgsfield MCP | soul_2 (3:4) | 기준 얼굴 sanggu v3 | v2에서 chubby·double chin → average build, slightly round face | - | 0.12 | 폐기: 비만, 점이 턱에, 수염. 테는 가장 가까움 | 3회 연속 redo → 멈춤 |
