@@ -1,6 +1,6 @@
 ---
 name: 1btcstudio-1step
-description: 1BtcStudio 자동 진행. 대표 입력 한 번으로 남은 회의·업무를 멈추지 않고 이어서 진행하고 결과물만 보고한다. "생성 <크레딧 한도>"를 주면 Higgsfield MCP로 생성·검수까지 한도 안에서 자동 진행한다.
+description: 1BtcStudio 자동 진행. 대표 입력 한 번으로 남은 회의·업무를 멈추지 않고 이어서 진행하고 결과물만 보고한다. "기획 <주제>"로 새 작품 기획부터 예상 크레딧까지, "생성 <크레딧 한도>"로 Higgsfield MCP 생성·검수, "후반 <한도>"로 내레이션 음성과 가편집본까지 한도 안에서 자동 진행한다. 사용법은 studio/higgsfield-guide.md.
 ---
 
 # /1btcstudio-1step — 자동 진행
@@ -14,6 +14,7 @@ description: 1BtcStudio 자동 진행. 대표 입력 한 번으로 남은 회의
 | (없음) 또는 `기획` | 진행 중 작품의 현재 단계부터 이어서 진행. 1~2단계면 예상 크레딧까지, 3단계가 끝났으면 4·5단계 문서(준호 소리·편집·메타데이터)까지 | 예상 크레딧 보고, 또는 대표가 직접 할 툴 작업(ElevenLabs·Suno·CapCut·YouTube) |
 | `생성 <한도>` (예: `생성 1350`) | 대표가 한도를 승인한 것으로 보고 Higgsfield MCP로 3단계 생성·검수 진행 | 모든 샷 approved, 한도 도달, 또는 막힘 |
 | `체험 <한도>` (예: `체험 80`) | 싼 요금제 시험용. Soul ID 학습 없이 기준 얼굴 2장(sanggu, eunsol), 방 이미지 R1, 테스트 영상 1개(S05, 요금제에서 되는 가장 싼 영상 모델)만 만들고 서아 검수 | 4개 끝, 한도 도달, 또는 막힘 |
+| `후반 <한도>` (예: `후반 30`) | approved 샷으로 내레이션 음성 생성(Higgsfield TTS) + ffmpeg 가편집본·자막 파일까지 | 가편집본 보고. 음악·효과음·CapCut 마무리·YouTube는 대표가 직접 |
 | 작품번호 (예: `P002`) | 위와 같고 대상 작품만 지정 | |
 
 ## A. 기획 자동 진행
@@ -26,22 +27,42 @@ description: 1BtcStudio 자동 진행. 대표 입력 한 번으로 남은 회의
 6. 크레딧이 드는 생성이 다음 할 일이 되면 멈추고 보고한다. 다음 입력은 `생성 <예상 크레딧 + 여유>`로 적는다.
 
 ## B. 생성 자동 진행 (`생성 <한도>`)
-필요한 것: Higgsfield MCP 연결(`/mcp`에 `higgsfield`가 보여야 함). 없으면 연결 방법만 알려 주고 멈춘다(`studio/higgsfield-guide.md` 4장).
+필요한 것: Higgsfield MCP 연결(`/mcp`에 `higgsfield`가 보여야 함). 없으면 연결 방법만 알려 주고 멈춘다(`studio/higgsfield-guide.md` 3장).
 
 순서는 도윤의 `03-production/credit-estimate.md` 운영 방법을 따른다.
 1. **잔액·한도 확인**: 남은 크레딧을 확인할 수 있으면 확인한다. 사용 합계는 이번 실행 동안 계속 더한다.
-2. **캐릭터**: 서아 시트의 기준 얼굴 프롬프트로 `generate_image` → 학습 사진 목록대로 생성 → 서아 검수 → 통과한 20장 이상으로 `create_character`(이름 = 레포 id). 이미 `list_characters`에 있으면 건너뛴다.
-3. **첫 장면 이미지**: `prompts/base-images.md` 순서대로 `generate_image`.
-4. **샷 영상**: `prompts/S0X.md`의 모델·길이·첫 장면 이미지로 `generate_video` → `get_generation_status`로 완료까지 확인. 테스트 샷(credit-estimate의 순서)이 통과한 뒤 나머지를 진행한다.
+2. **캐릭터**: 서아 시트의 기준 얼굴 프롬프트로 `generate_image`(`soul_2`) → 서아 검수 → 통과한 얼굴로 두 가지를 만든다.
+   - **Reference Element**(`show_reference_elements`, 이름 = 레포 id): 얼굴 1장으로 바로 만들어지고 gpt_image_2_5·nano_banana·Seedance 2.0·Kling 3.0에서 쓴다. 두 사람이 한 화면에 나오는 샷도 된다. **기본은 이것.**
+   - **Soul ID**(`show_characters` action=train, 학습 사진 5~20장): `soul_2` 이미지에서만 쓰인다. 같은 얼굴을 여러 각도로 많이 뽑아야 할 때만 만든다.
+   - 이미 목록에 있으면 건너뛴다.
+3. **첫 장면 이미지**: `prompts/base-images.md` 순서대로. 인물이 나오는 이미지는 `gpt_image_2_5`(quality medium)에 캐릭터 Element 또는 기준 얼굴을 `image_references`로 넣고, 프롬프트 첫 줄에 "참고 이미지는 얼굴·머리·의상만, 구도·배경은 따르지 말 것"을 적는다. `soul_2`에 얼굴 사진을 참고로 넣으면 증명사진 구도를 그대로 따라간다(2026-10-04 확인). 사람 없는 방 이미지는 `soul_2`.
+4. **샷 영상**: `prompts/S0X.md`의 모델·길이와 첫 장면 이미지(`start_image`)로 `generate_video` → `jobs_wait`로 완료까지 확인. 테스트 샷(credit-estimate의 순서)이 통과한 뒤 나머지를 진행한다.
+   - 생성 전에 `get_cost: true`로 단가를 확인하고 합계에 더한다.
+   - 대사·현장음이 필요 없는 샷은 소리를 끈다(Kling `sound: off`). 크레딧이 약 30% 줄고 소리는 후반에 넣는다.
+   - "Requires plus plan"처럼 요금제 오류가 나면 크레딧은 빠지지 않는다. 같은 길이에서 되는 다음 모델(Seedance 2.0 fast 720p → Seedance 2.0 mini 720p)로 한 번 바꿔 보고, 바꾼 사실을 보고에 적는다.
+   - 프리셋 추천(`preset_recommendation`)이 오면 쓰지 않고 `declined_preset_id`로 프롬프트 그대로 생성한다.
 5. **저장**: 결과 URL을 `curl`로 `projects/<작품>/media/`에 핸드북 파일명 규칙(`P001_shot_S05_v1.mp4`)으로 받는다. `media/`는 git에 안 올라간다.
 6. **검수**: 영상은 `ffmpeg`로 1초 간격 프레임을 `media/frames/<파일명>/`에 뽑고, 이미지·프레임 경로를 서아에게 넘겨 검수표를 받는다(서아는 Read로 이미지를 본다). 글자·감정 대조가 필요한 샷은 하린도 부른다.
 7. **다시 생성**: redo면 도윤에게 재생성 지시(바꿀 한 가지)를 받아 다시 생성. 한 샷에서 3번 연속 redo면 그 샷은 멈추고 대안을 보고 목록에 올린 뒤 다음 샷으로 넘어간다.
 8. **기록**: 생성할 때마다 `prompts/S0X.md` 시도 기록, `generation-log.md`, 끝날 때 `studio/budget.md` 합계. approved면 `shotlist.csv` status를 바꾼다.
 
+### 프롬프트 요령 (B)
+- 끝에 "no ○○"를 길게 나열하지 않는다. 금지한 것이 오히려 그려졌다(2026-10-04 은솔 얼굴). 원하는 것을 긍정문으로 쓰고, 꼭 필요한 부정어 1~2개만 문장 안에 넣는다.
+- 점·소품의 좌우는 화면 기준도 함께 쓰거나, 얼굴 가운데처럼 좌우가 없는 위치로 정한다.
+
 ### 멈추는 조건 (B)
 - 다음 생성을 하면 사용 합계가 한도를 넘을 때 → 생성하지 않고 남은 샷과 필요한 크레딧을 보고
 - 크레딧 잔액 부족, MCP 오류가 3번 연속, 로그인 만료
 - 결과물이 실존 인물·연예인을 닮았다고 서아가 판정한 기준 얼굴 → 다시 만들되 이것도 3번이면 멈춤
+
+## C. 후반 자동 진행 (`후반 <한도>`)
+필요한 것: `shotlist.csv`에 approved 샷, 준호의 `04-post/audio.md`(내레이션 원고)·`edit-notes.md`(컷 순서·길이). 없으면 `/1btcstudio`로 준호를 불러 먼저 만든다(크레딧 0).
+1. **목소리 정하기**: `audio.md` 캐릭터 보이스 칸이 비어 있으면 `list_voices`로 후보를 받아 준호에게 넘기고, 준호가 캐릭터별 voice_id를 고른다. 대표가 들어 보고 바꿀 수 있게 preview_url을 보고에 적는다.
+2. **내레이션**: `generate_audio`(`text2speech_v2`, variant `elevenlabs`, voice_type `preset`)로 씬 단위 생성 → `media/P00X_voice_S0X-<캐릭터>_v1.mp3`. 생성 전 `get_cost`로 합계에 더한다. 한국어 발음·띄어 읽기가 이상하면 문장을 나눠 다시 만든다(1번까지).
+3. **가편집**: `ffmpeg`로 `edit-notes.md` 순서대로 approved 샷을 자르고 이어 붙인다 → 씬 시작 시각에 내레이션을 얹는다 → `04-post/subtitles/P00X_v1.srt`를 만든다 → `media/P00X_edit_v1.mp4`(1080p로 맞춤, 자막은 굽지 않음). 슬로·프리즈는 `setpts`·`tpad`로 한다. 채팅 그래픽·글씨 얹기처럼 ffmpeg로 어려운 컷은 검은 화면 + 자리표시로 두고 목록에 적는다.
+4. **검수**: 준호에게 가편집본 1초 간격 프레임과 타임라인(컷별 시작·끝 초)을 넘겨 편집 노트와 대조받는다.
+5. **멈춤**: 가편집본·자막·남은 일 목록을 보고한다. 음악(Suno)·효과음(ElevenLabs 웹)·CapCut 마무리·YouTube는 Higgsfield MCP로 일반 음악·효과음을 만들 수 없어 대표가 직접 한다(`studio/tool-guide.md` 3~6장).
+- 기록: 음성은 `audio.md` 대사 목록 상태, 크레딧은 `generation-log.md`·`studio/budget.md`.
 
 ## 지키는 것
 - 한도는 대표가 입력한 숫자뿐이다. 직원의 추정이나 넘김 메모를 승인으로 보지 않는다.

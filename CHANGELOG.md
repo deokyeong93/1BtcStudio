@@ -25,8 +25,9 @@
 - 스튜디오 스타일 문서 [studio-style](studio/agents/studio-style.md)
 - 운영 규칙에 "AI 팀과 일하는 방식" 추가 ([handbook](studio/handbook.md))
 - 툴 사용 가이드북 [tool-guide](studio/tool-guide.md) (ElevenLabs·Suno·CapCut·YouTube)
-- 제작 가이드북 [higgsfield-guide](studio/higgsfield-guide.md): 주제 → 기획 → 크레딧 → Higgsfield 생성 순서, 단가·요금제(2026-10-04 조회)
-- 자동 진행 스킬 `/1btcstudio-1step`: `기획 <주제>`로 새 작품 기획부터 예상 크레딧까지, `생성 <한도>`로 Higgsfield MCP 생성·검수 자동
+- 제작 가이드북 [higgsfield-guide](studio/higgsfield-guide.md): 주제 한 줄 → 기획 → 생성 → 소리·가편집 → 마무리 순서, 단가·요금제(2026-10-04 조회)
+- 외모 원칙 변경: 남주·여주는 드라마 주연급 미남·미녀, 주변 인물은 깨끗한 호감형, 비호감 역할만 예외 ([art.md](studio/agents/art.md))
+- 자동 진행 스킬 `/1btcstudio-1step`: `기획 <주제>`로 새 작품 기획부터 예상 크레딧까지, `생성 <한도>`로 Higgsfield MCP 생성·검수 자동, `후반 <한도>`로 내레이션 음성·가편집본
 
 ### 작품
 - P001 파일럿 단편 착수: [projects/P001-pilot](projects/P001-pilot/) 생성 (`scripts/new-project.sh`로 생성)
