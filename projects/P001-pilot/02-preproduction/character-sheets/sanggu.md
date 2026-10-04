@@ -10,8 +10,8 @@
 - 체형: 키 약 183cm, 어깨가 넓고 듬직함. 비만 아님, 이중턱 없음.
 - 피부: 밝은 황색 피부, 수염 없음. 41세로 보이도록 웃음 주름을 옅게.
 - 특징: 굵은 검정 동그란 뿔테 안경은 유지. 점은 "왼쪽 눈꼬리 아래 볼"로 옮김(테에 가려지지 않아 AI가 그리기 쉬움).
-- 의상: v1과 같음(wrinkled만 뺌).
-- 바꾼 이유: 체험 3회에서 chubby, double chin, droopy, dark circles, messy, tired 때문에 매번 고도비만에 지친 얼굴이 나왔습니다. 이 단어들을 지우고 not obese, no beard 같은 부정어를 붙였습니다. 멀리서 알아보는 특징은 뻗친 머리 대신 "큰 체격 + 동그란 안경 + 하늘색 셔츠와 베이지 재킷"입니다.
+- 의상: v4 캐주얼(2026-10-04, 대표 지시). 흰 티셔츠 위에 하늘색 옥스퍼드 셔츠를 열어 입고, 베이지 치노 바지에 흰 운동화.
+- 바꾼 이유: 체험 3회에서 chubby, double chin, droopy, dark circles, messy, tired 때문에 매번 고도비만에 지친 얼굴이 나왔습니다. 이 단어들을 지우고 not obese, no beard 같은 부정어를 붙였습니다. 멀리서 알아보는 특징은 뻗친 머리 대신 "큰 체격 + 동그란 안경 + 하늘색 셔츠와 베이지 바지"입니다.
 - 검수: 단정하지 않은 머리, 비만, 수염, 사각 테가 나오면 버립니다. 웃는 얼굴에서 아는 배우가 떠오르면 기준 얼굴부터 다시 만듭니다.
 
 ## 외모 시안 (v1, 대체됨)
@@ -51,11 +51,10 @@
   - 가까이서만 보이는 것: 왼쪽 눈썹 꼬리가 짧은 흉터로 끊겨 있습니다.
 - 의상: 시안 A와 같습니다.
 
-### 추천: 시안 A
-1. 천장 CCTV는 위에서 내려다보는 화면이라 정수리가 보입니다. 뻗친 머리와 검정 굵은 안경테는 저화질에서도 "얼굴 위 검은 선 + 머리 윤곽"으로 남습니다. B의 사각 갈색 테와 C의 얇은 금속테는 저화질에서 사라집니다.
-2. 짧은 머리라 샷마다 머리 길이가 덜 흔들립니다. B의 웨이브, C의 곱슬, B의 수염 자국은 AI가 매번 다르게 그립니다.
-3. 하린 의견처럼 미남형이 아닌 허술한 호감형이라 끝장면 "우리 대표 왜 저래요?"가 삽니다.
-4. 실존 인물과 닮지 않게 하는 장치: 둥근 안경 하나만으로는 흔한 얼굴이 되므로 "왼쪽 광대 점 + 통통한 체형 + 처진 눈"을 함께 고정합니다. 기준 얼굴을 검수할 때 아는 얼굴이 떠오르면 버립니다.
+### 추천: 시안 A (v1 당시, 현재 기준은 외모 v2)
+1. 짧은 머리라 샷마다 머리 길이가 덜 흔들립니다. B의 웨이브, C의 곱슬, B의 수염 자국은 AI가 매번 다르게 그립니다.
+2. 하린 의견처럼 미남형이 아닌 허술한 호감형이라 끝장면 "우리 대표 왜 저래요?"가 삽니다.
+3. 실존 인물과 닮지 않게 하는 장치: 둥근 안경 하나만으로는 흔한 얼굴이 되므로 "왼쪽 광대 점 + 통통한 체형 + 처진 눈"을 함께 고정합니다. 기준 얼굴을 검수할 때 아는 얼굴이 떠오르면 버립니다.
 
 ## 캐릭터 시트
 - 이미지 링크: (P001_char_sanggu_v1.png — 생성 후 기입)
@@ -70,7 +69,7 @@
 ## 기준 얼굴 프롬프트 v2 (Higgsfield Soul 이미지용)
 
 ```
-Realistic photo, front-facing waist-up portrait of a handsome 41-year-old Korean man with Korean drama lead actor-level looks, tall and broad-shouldered with a sturdy solid build, friendly face with a well-defined jaw, clear healthy skin, bright wide smile with his eyes curving into crescents, warm playful expression, neat short black hair with short sides and slight volume on top, thick black perfectly round-frame glasses with clear lenses and no reflections, one small dark brown mole on his left cheek below the outer corner of his left eye, seen on the right side of the image, faint smile lines, clean-shaven, light blue oxford shirt with open collar and no tie, unbuttoned beige cotton blazer with sleeves pushed up to the forearms, plain light grey background, soft even front lighting, natural skin texture. Not obese, not chubby, no double chin, no beard, no stubble, no dark circles, not tired, no square or rectangular glasses, no other moles.
+Realistic photo, front-facing waist-up portrait of a handsome 41-year-old Korean man with Korean drama lead actor-level looks, tall and broad-shouldered with a sturdy solid build, friendly face with a well-defined jaw, clear healthy skin, bright wide smile with his eyes curving into crescents, warm playful expression, neat short black hair with short sides and slight volume on top, thick black perfectly round-frame glasses with clear lenses and no reflections, one small dark brown mole on his left cheek below the outer corner of his left eye, seen on the right side of the image, faint smile lines, clean-shaven, unbuttoned light blue oxford shirt worn open over a plain white crew-neck T-shirt, sleeves rolled to the forearms, plain light grey background, soft even front lighting, natural skin texture. Not obese, not chubby, no double chin, no beard, no stubble, no dark circles, not tired, no square or rectangular glasses, no other moles.
 ```
 
 ## Soul ID 학습 사진 목록 (24장)
@@ -103,7 +102,7 @@ Same man as the reference image, same handsome face, same round black glasses, s
 | 17 | 앉은 반신 | 정면 | 무표정 | seated on an office chair, waist-up, facing camera, neutral, plain light grey background |
 | 18 | 앉은 반신 | 3/4 | 멋쩍은 웃음 | seated, three-quarter view, sheepish grin, scratching the back of his head, plain light grey background |
 | 19 | 앉은 반신 | 정면 | 진지·단호 | seated, facing camera, serious determined expression, plain light grey background |
-| 20 | 전신 | 정면 | 무표정 | full body standing, facing camera, neutral, brown shoes visible, plain light grey background |
+| 20 | 전신 | 정면 | 무표정 | full body standing, facing camera, neutral, beige chinos and white sneakers visible, plain light grey background |
 | 21 | 전신 | 3/4 | 옅은 미소 | full body standing, three-quarter view, slight smile, plain light grey background |
 | 22 | 반신 | 정면 | 무표정 | waist-up, facing camera, neutral, bright white office wall background |
 | 23 | 반신 | 3/4 | 미소 | waist-up, three-quarter view, smile, bright small office background, soft daylight |
