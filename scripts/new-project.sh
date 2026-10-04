@@ -34,8 +34,8 @@ create_issues() { # $1=작품 폴더명(P001-pilot) $2=마일스톤 제목
     urls+=("$url")
     echo "  생성: $title → $url"
   done <<'EOF'
-1|1-development|기획|tool:grok
-2|2-preproduction|프리프로덕션|tool:grok,tool:higgsfield,tool:elevenlabs
+1|1-development|기획|tool:claude
+2|2-preproduction|프리프로덕션|tool:claude,tool:higgsfield,tool:elevenlabs
 3|3-production|프로덕션|tool:higgsfield
 4|4-post|포스트프로덕션|tool:elevenlabs,tool:higgsfield,tool:suno,tool:editor
 5|5-distribution|배포|tool:youtube

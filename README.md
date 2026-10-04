@@ -13,8 +13,8 @@ AI 툴로 단편 영상을 만드는 1인 스튜디오입니다.
 
 | 단계 | 하는 일 | 툴 |
 |---|---|---|
-| 1. 기획 (Development) | 시나리오, 캐릭터 설정 | Grok 에이전트 |
-| 2. 프리프로덕션 | 샷 리스트, 콘티, 캐릭터 시트 | Grok 에이전트 |
+| 1. 기획 (Development) | 시나리오, 캐릭터 설정 | Claude Code 직원팀 (`/1btcstudio`) |
+| 2. 프리프로덕션 | 샷 리스트, 콘티, 캐릭터 시트 | Claude Code 직원팀, Higgsfield AI (Soul ID) |
 | 3. 프로덕션 (촬영) | 샷 단위 영상 생성, Soul ID로 캐릭터 얼굴 유지 | Higgsfield AI |
 | 4. 포스트프로덕션 | 음성·효과음 / 립싱크 / 음악 / 편집·색보정·믹싱 / 자막 | ElevenLabs / Higgsfield Lipsync Studio (대안 sync.so) / Suno / DaVinci Resolve 또는 CapCut / CapCut 자동자막 |
 | 5. 배포 | 업로드, 공개 | YouTube |
@@ -29,7 +29,7 @@ studio/            ← 스튜디오 운영 문서
   tools.md           툴별 용도·요금제·상업 이용 여부
   budget.md          월 구독료·크레딧 사용 내역
   licenses.md        생성물의 상업적 이용 조건
-  agents/            Grok 직원(에이전트) 채용 가이드북·지시문 원본
+  agents/            직원팀(Claude Code 서브에이전트) 직원표·업무 매뉴얼
   decisions/         결정 기록 (왜 그렇게 정했나)
 templates/project/ ← 새 작품을 시작할 때 복사되는 틀
 projects/          ← 실제 작품 (P001-pilot/ ...)

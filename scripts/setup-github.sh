@@ -32,7 +32,7 @@ type:task|0E8A16|작업
 type:decision|FBCA04|결정 기록 (studio/decisions/)
 type:bug|D73A4A|툴 오류·한계
 type:idea|C5DEF5|아이디어
-tool:grok|5A5A5A|Grok 에이전트
+tool:claude|5A5A5A|Claude Code 직원팀
 tool:higgsfield|E99695|Higgsfield AI
 tool:elevenlabs|F9D0C4|ElevenLabs
 tool:suno|FEF2C0|Suno
@@ -79,7 +79,7 @@ while IFS='|' read -r title tmpl labels; do
   urls+=("$url")
   echo "  생성: $title → $url"
 done <<'EOF'
-[툴 세팅] Grok|tool-setup.md|stage:0-studio,type:setup,tool:grok
+[툴 세팅] Claude Code 직원팀 (/1btcstudio)|tool-setup.md|stage:0-studio,type:setup,tool:claude
 [툴 세팅] Higgsfield AI (Soul ID, Lipsync Studio)|tool-setup.md|stage:0-studio,type:setup,tool:higgsfield
 [툴 세팅] ElevenLabs|tool-setup.md|stage:0-studio,type:setup,tool:elevenlabs
 [툴 세팅] Suno|tool-setup.md|stage:0-studio,type:setup,tool:suno
